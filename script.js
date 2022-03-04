@@ -4,17 +4,24 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
  */
 
-import Backpack from "./Backpack.js";
+import Friends from "./Friends.js";
 
-const everydayPack = new Backpack(
+const Friends = new Friends(
+  "Friends",
+  "Orange",
+  "Purple",
+  image.png
+
 );
 
 const content = `
      <figure class="backpack__image">
-       <img src= alt="" />
+       <img src=${Friends.image} alt="" />
      </figure>
-     <h1 class="backpack__name"></h1>
+     <h1 class="backpack__name">${Friends.name}}</h1>
      <ul class="backpack__features">
+     <li> pictureFrame: ${Friends.pictureFrame} <li>
+     <li> sofa: ${Friends.sofa} <li>
      </ul>
    </article>
  `;
